@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="projectApp.View.SaveImage">
+    <ContentPage.Content>
+        <Grid >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="imageIcon" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Entry Text="Image Name: " 
+                   IsReadOnly="True"
+                   Grid.Column="0" 
+                   Grid.Row="1"
+                   BackgroundColor="#90CCF4"
+                   HorizontalTextAlignment="End"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry Placeholder="enter name" 
+                   Grid.Column="1" 
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry Text="Timestamp: " 
+                   IsReadOnly="True"
+                   Grid.Column="0" 
+                   Grid.Row="2"
+                   HorizontalTextAlignment="End"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry  x:Name="TimeStamp_Entry"
+                   IsReadOnly="True"
+                   Grid.Column="1" 
+                   Grid.Row="2"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry Text="Location: " 
+                   IsReadOnly="True"
+                   Grid.Column="0" 
+                   Grid.Row="3"
+                   HorizontalTextAlignment="End"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry  x:Name="Location_Entry"
+                   IsReadOnly="True"
+                   Grid.Column="1" 
+                   Grid.Row="3"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry Text="Category: " 
+                   IsReadOnly="True"
+                   Grid.Column="0" 
+                   Grid.Row="4"
+                   HorizontalTextAlignment="End"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="Center"/>
+            <Entry Placeholder="enter a category"
+                   Grid.Column="1" 
+                   Grid.Row="4"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"/>
+
+            <Button Text="Save" Grid.Row="5" Grid.ColumnSpan="2"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
