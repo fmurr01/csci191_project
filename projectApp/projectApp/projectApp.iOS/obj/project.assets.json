@@ -1148,11 +1148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
       "projectName": "projectApp.iOS",
-      "projectPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
+      "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1173,8 +1173,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp\\projectApp.csproj": {
-              "projectPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp\\projectApp.csproj"
+            "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp\\projectApp.csproj": {
+              "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp\\projectApp.csproj"
             }
           }
         }

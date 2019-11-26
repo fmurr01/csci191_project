@@ -2114,11 +2114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.Android\\projectApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.Android\\projectApp.Android.csproj",
       "projectName": "projectApp.Android",
-      "projectPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.Android\\projectApp.Android.csproj",
+      "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.Android\\projectApp.Android.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2139,8 +2139,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp\\projectApp.csproj": {
-              "projectPath": "C:\\Users\\test\\Desktop\\projectApp\\projectApp\\projectApp\\projectApp.csproj"
+            "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp\\projectApp.csproj": {
+              "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\projectApp\\projectApp\\projectApp\\projectApp.csproj"
             }
           }
         }
