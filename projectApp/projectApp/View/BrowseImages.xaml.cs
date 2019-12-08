@@ -14,7 +14,7 @@ namespace projectApp.View
     {
         public BrowseImages()
         {
-            InitializeComponent();
+        InitializeComponent();
         }
     }
 }

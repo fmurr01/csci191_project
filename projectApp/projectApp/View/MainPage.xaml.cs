@@ -25,8 +25,16 @@ namespace projectApp
         }
         void MainPage_Clicked(object sender, System.EventArgs e)
         {
+           
             ImageButton button = (ImageButton)sender;
-            Navigation.PushAsync(vm.MainPage_NextPage(button.ClassId));
+            try
+            {
+                Navigation.PushAsync(vm.MainPage_NextPage(button.ClassId));
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine("Map didnt work out " + exc);
+            }
         }
     }
     
