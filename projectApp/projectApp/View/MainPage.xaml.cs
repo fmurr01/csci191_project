@@ -33,7 +33,7 @@ namespace projectApp
             }
             catch (Exception exc)
             {
-                Console.WriteLine("Map didnt work out " + exc);
+                Console.WriteLine("View change did not work out ----------" + exc);
             }
         }
     }

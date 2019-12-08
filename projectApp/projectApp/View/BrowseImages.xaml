@@ -9,7 +9,10 @@
     <ContentPage.BindingContext>
         <vm:BrowseImagesViewModel/>
     </ContentPage.BindingContext>
-    <CollectionView ItemsSource="{Binding Images}">
+    <CollectionView ItemsSource="{Binding Images}"
+                    SelectionMode="Single"
+                    SelectionChanged="OnCollectionViewSelectionChanged"
+                    >
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical"
                         Span="2" />

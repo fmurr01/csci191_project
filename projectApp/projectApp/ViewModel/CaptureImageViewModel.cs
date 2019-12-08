@@ -17,13 +17,13 @@ namespace projectApp.ViewModel
         }
         public CaptureImageViewModel()
         {
-            ImageInfo = new Model.Image();
+            ImageInfo = new Model.pic();
             CapturedImage = null;
             DiscardButton_isVisible = "False";
             SaveButton_isVisible = "False";
         }
 
-        public Model.Image ImageInfo { get; set; }
+        public Model.pic ImageInfo { get; set; }
         public MediaFile Photo { get; set; }
         
         public ImageSource _CapturedImage;
@@ -118,12 +118,15 @@ namespace projectApp.ViewModel
                   SaveMetaData = true,
               });
 
+
             // Check file is available
             if (Photo != null)
             {
                 CapturedImage = ImageSource.FromStream(() => { return Photo.GetStream(); });
                 DiscardButton_isVisible = "True";
                 SaveButton_isVisible = "True";
+
+
             }
 
 

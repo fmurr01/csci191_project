@@ -10,7 +10,7 @@ namespace projectApp.View
     public partial class SaveImage : ContentPage
     {
         SaveImageViewModel vm;
-        Model.Image NewImage;
+        Model.pic NewImage;
         public SaveImage(string name, string timestamp, string coordinates, MediaFile photo)
         {
             InitializeComponent();
@@ -19,7 +19,7 @@ namespace projectApp.View
             imageName_label.Text = "IMG_" + (new Random()).Next().ToString();
             timestamp_label.Text = timestamp;
             location_label.Text = coordinates;
-            
+
         }
 
         private void ConfirmSave_button_Clicked(object sender, EventArgs e)

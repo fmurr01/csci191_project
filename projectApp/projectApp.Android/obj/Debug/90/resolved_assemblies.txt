@@ -3,6 +3,7 @@ C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\p
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\mscorlib.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.Media.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.Permissions.dll
