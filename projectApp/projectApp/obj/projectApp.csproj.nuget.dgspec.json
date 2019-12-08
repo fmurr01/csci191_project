@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj": {}
+    "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj": {
+    "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj",
+        "projectUniqueName": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj",
         "projectName": "projectApp",
-        "projectPath": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj",
-        "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\obj\\",
+        "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj",
+        "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -63,10 +62,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

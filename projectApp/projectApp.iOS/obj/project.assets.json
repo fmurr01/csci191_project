@@ -1142,24 +1142,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Michelle\\.nuget\\packages\\": {},
+    "C:\\Users\\test\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
       "projectName": "projectApp.iOS",
-      "projectPath": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp.iOS\\projectApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1173,8 +1173,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj": {
-              "projectPath": "C:\\Users\\Michelle\\Desktop\\cs191t-project\\projectApp\\projectApp\\projectApp.csproj"
+            "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj": {
+              "projectPath": "C:\\Users\\test\\Documents\\GitHub\\csci191_project\\csci\\csci191_project\\projectApp\\projectApp\\projectApp.csproj"
             }
           }
         }

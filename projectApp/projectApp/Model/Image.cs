@@ -4,7 +4,7 @@ using System.Text;
 
 namespace projectApp.Model
 {
-    class Image
+    public class Image
     {
         public string Name { get; set; }
         public string TimeStamp { get; set; }
@@ -22,5 +22,7 @@ namespace projectApp.Model
             Rating = 0;
             Category = new List<string>();
         }
+
     }
+        
 }
