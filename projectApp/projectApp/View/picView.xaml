@@ -62,12 +62,14 @@
 
                 <Label Grid.Row="2"
                        Grid.Column="0"
+                       Grid.ColumnSpan="2"
                        Text="Timestamp: "
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
                 <Label Grid.Row="2"
                        Grid.Column="1"
+                       Grid.ColumnSpan="2"
                        Text="{Binding TimeStamp}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
@@ -75,12 +77,14 @@
 
                 <Label Grid.Row="3"
                        Grid.Column="0"
+                       Grid.ColumnSpan="2"
                        Text="Coordinates: "
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
                 <Label Grid.Row="3"
                        Grid.Column="1"
+                       Grid.ColumnSpan="2"
                        Text="{Binding Coordinates}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"

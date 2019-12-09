@@ -30,5 +30,43 @@ namespace projectApp.ViewModel
             return selectedItem;
         }
 
+        public String SwipeRate(SwipedEventArgs e, String rat, int i)
+        {
+            
+            if (e.Direction.ToString() == "Right")
+            {
+                i++;
+                rat = i.ToString();
+                return rat;
+            }
+            if (e.Direction.ToString() == "Left")
+            {
+                i--;
+                rat = i.ToString();
+                return rat;
+
+            }
+            return rat;
+        }
+
+        public String SwipeCat(SwipedEventArgs e, String tmp)
+        {
+
+            if (e.Direction.ToString() == "Up")
+            {
+               
+                tmp = "Category UP";
+                return tmp;
+            }
+            if (e.Direction.ToString() == "Down")
+            {
+
+                tmp = "Category DOWN";
+                return tmp;
+
+            }
+            return tmp;
+        }
+
     }
 }

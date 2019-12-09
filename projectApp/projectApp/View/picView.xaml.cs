@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using projectApp.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using projectApp.ViewModel;
 
 namespace projectApp.View
 {
@@ -33,8 +34,13 @@ namespace projectApp.View
 
         void OnSwiped(object sender, SwipedEventArgs e)
         {
-            
-            rat.Text = $"{e.Direction.ToString()}";
+
+
+            int i= System.Convert.ToInt32(rat.Text); ;
+            rat.Text = new PicViewModel().SwipeRate(e, rat.Text, i);
+            String tmp = cat.Text;
+            cat.Text = new PicViewModel().SwipeCat(e, tmp);
+            // rat.Text = $"{e.Direction.ToString()}";
         }
     }
 }
