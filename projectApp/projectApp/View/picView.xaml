@@ -6,14 +6,96 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="projectApp.View.picView">
-    <ContentPage.BindingContext>
-        <vm:BrowseImagesViewModel/>
-    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Coordinates}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="{Binding Name}"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+            <Image Source="{Binding Directory}" >
+                <Image.GestureRecognizers>
+                    <!-- Can also set a swipe threshold on each gesture recognizer -->
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Grid Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Category: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="{Binding Category}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" 
+                       x:Name="cat"/>
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       Text="Rating: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                <Label Grid.Row="0"                      
+                       Grid.Column="3"
+                       Text="{Binding Rating}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" 
+                       x:Name="rat"/>
+
+                <Label Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Timestamp: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                <Label Grid.Row="2"
+                       Grid.Column="1"
+                       Text="{Binding TimeStamp}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+
+                <Label Grid.Row="3"
+                       Grid.Column="0"
+                       Text="Coordinates: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                <Label Grid.Row="3"
+                       Grid.Column="1"
+                       Text="{Binding Coordinates}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                
+                
+                <ImageButton x:Name="SavePicChanges" Source="save2.png" Clicked="PicView_Clicked"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     Grid.ColumnSpan="2"
+                     BackgroundColor="Green"                       
+                     CornerRadius="40"/>
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

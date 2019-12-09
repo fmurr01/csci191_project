@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using projectApp.Model;
 using projectApp.ViewModel;
+using Newtonsoft.Json;
 
 namespace projectApp.View
 {
@@ -20,9 +21,12 @@ namespace projectApp.View
 
         void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            // pass selected item to pic view
             var item = e.CurrentSelection.FirstOrDefault() as pic;
-            new picViewModel(item);
-            Navigation.PushAsync(new picView());
+            Console.WriteLine(item.Coordinates + item.Name);
+            var picViewPage = new picView();
+            picViewPage.BindingContext = item;
+            Navigation.PushAsync(picViewPage);
         }
 
     }
