@@ -46,9 +46,9 @@
                    BackgroundColor="#5085A5">
                 <Entry x:Name="imageName_label" Text="IMAGE" 
                        TextColor="#F7F9fB"
+                       FontSize="13"
                        HorizontalTextAlignment="Start"
                        HorizontalOptions="Start"
-                       VerticalOptions="FillAndExpand"
                        BackgroundColor="#5085A5"
                        Margin="0, 0, 0, 0"/>
             </Frame>
