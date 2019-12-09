@@ -57,7 +57,7 @@ namespace projectApp.ViewModel
             }
         }
 
-        String imageFileName = "IMG_" + (new Random()).Next().ToString() + ".jpg";
+        String imageFileName = "IMG_" + (new Random()).Next().ToString();
 
         public Page SaveImage_NextPage()
         {

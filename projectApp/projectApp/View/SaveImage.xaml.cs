@@ -10,21 +10,23 @@ namespace projectApp.View
     public partial class SaveImage : ContentPage
     {
         SaveImageViewModel vm;
-        Model.pic NewImage;
         public SaveImage(string name, string timestamp, string coordinates, MediaFile photo)
         {
             InitializeComponent();
             BindingContext = vm;
             imageIcon.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
-            imageName_label.Text = name;
+            imageName_label.Text = name ;
             timestamp_label.Text = timestamp;
             location_label.Text = coordinates;
+            directory = name + ".jpg";
 
         }
 
+        public String directory;
+
         private void ConfirmSave_button_Clicked(object sender, EventArgs e)
         {
-            SaveImageViewModel.SaveImage(imageName_label.Text, timestamp_label.Text, location_label.Text, category_label.Text);
+            SaveImageViewModel.SaveImage(imageName_label.Text, timestamp_label.Text, location_label.Text, category_label.Text, directory);
             this.Navigation.PopAsync();
         }
         // confirmsave button here

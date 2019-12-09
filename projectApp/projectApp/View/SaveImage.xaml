@@ -44,14 +44,13 @@
                    CornerRadius="7"
                    BorderColor="#5085A5"
                    BackgroundColor="#5085A5">
-                <Label x:Name="imageName_label" Text="IMAGE" 
+                <Entry x:Name="imageName_label" Text="IMAGE" 
                        TextColor="#F7F9fB"
                        HorizontalTextAlignment="Start"
                        HorizontalOptions="Start"
                        VerticalOptions="FillAndExpand"
-                       VerticalTextAlignment="Center"
                        BackgroundColor="#5085A5"
-                       Margin="10, 0, 0, 0"/>
+                       Margin="0, 0, 0, 0"/>
             </Frame>
             
             <!-- TIMESTAMP -->
