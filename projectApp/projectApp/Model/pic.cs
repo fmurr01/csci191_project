@@ -12,10 +12,13 @@ namespace projectApp.Model
         public string Coordinates { get; set; }
         public int Rating { get; set; }
         public string Category { get; set; }
+        public string OldName { get; set; }
+
 
         public pic()
         {
             Name = "";
+            OldName = "";
             TimeStamp = "";
             Directory = "";
             Coordinates = "";

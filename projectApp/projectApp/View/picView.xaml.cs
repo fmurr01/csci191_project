@@ -23,21 +23,21 @@ namespace projectApp.View
 
             ImageButton button = (ImageButton)sender;
             try
-            {
-              //  Navigation.PushAsync(vm.MainPage_NextPage(button.ClassId));
+            {              
+                SaveImageViewModel.SaveImage(imageName_entry.Text, timestamp_label.Text, coordinates_label.Text, category_label.Text);
             }
             catch (Exception exc)
             {
-                Console.WriteLine("View change did not work out ----------" + exc);
+                Console.WriteLine("Did not save changes to image ----------" + exc);
             }
         }
 
         void OnSwiped(object sender, SwipedEventArgs e)
         {
-            int i= Convert.ToInt32(rat.Text); ;
-            rat.Text = new PicViewModel().SwipeRate(e, rat.Text, i);
-            String tmp = cat.Text;
-            cat.Text = new PicViewModel().SwipeCat(e, tmp);
+            int i= Convert.ToInt32(rating_label.Text); ;
+            rating_label.Text = new PicViewModel().SwipeRate(e, rating_label.Text, i);
+            String tmp = category_label.Text;
+            category_label.Text = new PicViewModel().SwipeCat(e, tmp);
             // rat.Text = $"{e.Direction.ToString()}";
         }
     }

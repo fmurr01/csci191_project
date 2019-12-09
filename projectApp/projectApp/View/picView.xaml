@@ -8,7 +8,8 @@
              x:Class="projectApp.View.picView">
     <ContentPage.Content>
         <StackLayout Margin="20,5,20,20">
-            <Label Text="{Binding Name}"
+            <Entry Text="{Binding Name}"
+               x:Name="imageName_entry"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
             <Grid Padding="5">
@@ -47,10 +48,11 @@
                        VerticalOptions="End" />
                 <Label Grid.Row="4"
                        Grid.Column="3"
+                        x:Name="category_label"
                        Text="{Binding Category}"
                        FontAttributes="Bold"
                        VerticalOptions="End" 
-                       x:Name="cat"/>
+                        />
 
                 <Label Grid.Row="4"
                        Grid.Column="0"
@@ -60,10 +62,11 @@
                        VerticalOptions="End" />
                 <Label Grid.Row="4"                      
                        Grid.Column="1"
+                       x:Name="rating_label"
                        Text="{Binding Rating}"
                        FontAttributes="Bold"
                        VerticalOptions="End" 
-                       x:Name="rat"/>
+                       />
 
                 <Label Grid.Row="2"
                        Grid.Column="0"
@@ -75,6 +78,7 @@
                 <Label Grid.Row="2"
                        Grid.Column="1"
                        Grid.ColumnSpan="2"
+                       x:Name="timestamp_label"
                        Text="{Binding TimeStamp}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
@@ -90,6 +94,7 @@
                 <Label Grid.Row="3"
                        Grid.Column="1"
                        Grid.ColumnSpan="3"
+                        x:Name="coordinates_label"
                        Text="{Binding Coordinates}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"

@@ -32,7 +32,7 @@
                         <ColumnDefinition Width="120" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Image Grid.RowSpan="4"
+                    <Image Grid.RowSpan="5"
                        Source="{Binding Directory}"
                        Aspect="AspectFill"
                        HeightRequest="60"

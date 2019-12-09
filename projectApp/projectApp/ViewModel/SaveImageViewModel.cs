@@ -7,6 +7,8 @@ using PCLStorage;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.IO;
+using Xamarin.Essentials;
+using System.Linq;
 
 namespace projectApp.ViewModel
 {
@@ -41,14 +43,39 @@ namespace projectApp.ViewModel
                 {
                     Console.WriteLine("--------------Json did not save--------------");
                 }
-                pics.Add(savedPic);
-                string json = JsonConvert.SerializeObject(pics);
-                File.WriteAllText(fileName, json);
+                //Linq to find if already saved
+                var match = from p in pics
+                            where p.TimeStamp == savedPic.TimeStamp
+                            select p;
+                pic firstmatch = null;
+                try
+                {
+                    firstmatch = match.First();
+                }
+                catch (Exception e)
+                {
                 
+                }
+
+                if (firstmatch != null) 
+                {
+                    savedPic.Directory = firstmatch.Directory;
+                    pics.Remove(firstmatch);
+                    pics.Add(savedPic);
+                    string json = JsonConvert.SerializeObject(pics);
+                    File.WriteAllText(fileName, json);
+                }
+
+                else
+                {
+                    pics.Add(savedPic);
+                    string json = JsonConvert.SerializeObject(pics);
+                    File.WriteAllText(fileName, json);
+
+                }              
             }
             else
             {
-              
                 pics.Add(savedPic);
                 string json = JsonConvert.SerializeObject(pics);
                 File.WriteAllText(fileName, json);
