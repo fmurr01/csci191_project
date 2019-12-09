@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using projectApp.Model;
+using projectApp.ViewModel;
 
 namespace projectApp.View
 {
@@ -20,7 +21,7 @@ namespace projectApp.View
         void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = e.CurrentSelection.FirstOrDefault() as pic;
-            Console.WriteLine(item.Name);
+            new picViewModel(item);
             Navigation.PushAsync(new picView());
         }
 

@@ -15,20 +15,24 @@
                     >
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical"
-                        Span="2" />
+                        Span="1" />
         </CollectionView.ItemsLayout>
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
+                <Grid Padding="5">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="35" />
-                        <RowDefinition Height="35" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="70" />
-                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Image Grid.RowSpan="2"
+                    <Image Grid.RowSpan="4"
                        Source="{Binding Directory}"
                        Aspect="AspectFill"
                        HeightRequest="60"
@@ -38,11 +42,54 @@
                        FontAttributes="Bold"
                        LineBreakMode="TailTruncation" />
                     <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Text="{Binding Category}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="1"
                        Grid.Column="1"
+                       Text="Category: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="2"
+                       Grid.Column="2"
+                       Text="{Binding Rating}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="2"
+                       Grid.Column="1"
+                       Text="Rating: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="3"
+                       Grid.Column="2"
+                       Text="{Binding TimeStamp}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="3"
+                       Grid.Column="1"
+                       Text="Timestamp: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    <Label Grid.Row="4"
+                       Grid.Column="2"
                        Text="{Binding Coordinates}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
+                    <Label Grid.Row="4"
+                       Grid.Column="1"
+                       Text="Coordinates: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+
                 </Grid>
             </DataTemplate>
         </CollectionView.ItemTemplate>
