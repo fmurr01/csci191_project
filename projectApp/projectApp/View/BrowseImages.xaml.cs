@@ -23,7 +23,6 @@ namespace projectApp.View
         {
             // pass selected item to pic view
             var item = e.CurrentSelection.FirstOrDefault() as pic;
-            Console.WriteLine(item.Coordinates + item.Name);
             var picViewPage = new picView();
             picViewPage.BindingContext = item;
             Navigation.PushAsync(picViewPage);

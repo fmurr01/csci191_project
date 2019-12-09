@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"projectApp.Android.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"PCLStorage.Abstractions.dll",
+		"PCLStorage.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",

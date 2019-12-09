@@ -57,10 +57,11 @@ namespace projectApp.ViewModel
             }
         }
 
-        
+        String imageFileName = "IMG_" + (new Random()).Next().ToString() + ".jpg";
+
         public Page SaveImage_NextPage()
         {
-            return new View.SaveImage(ImageInfo.Name, ImageInfo.TimeStamp, ImageInfo.Coordinates, Photo); // fix parameters
+            return new View.SaveImage(imageFileName, ImageInfo.TimeStamp, ImageInfo.Coordinates, Photo); // fix parameters
         }
         public async void DisplayImage()
         {
@@ -73,7 +74,6 @@ namespace projectApp.ViewModel
             //timeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
 
             ImageInfo.TimeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-            String imageFileName = "IMG_" + ImageInfo.TimeStamp + ".jpg";
 
             Plugin.Media.Abstractions.Location imageLocation;
             imageLocation = new Plugin.Media.Abstractions.Location();
@@ -116,6 +116,7 @@ namespace projectApp.ViewModel
                   Name = imageFileName,
                   Location = imageLocation,
                   SaveMetaData = true,
+                 
               });
 
 

@@ -34,9 +34,7 @@ namespace projectApp.View
 
         void OnSwiped(object sender, SwipedEventArgs e)
         {
-
-
-            int i= System.Convert.ToInt32(rat.Text); ;
+            int i= Convert.ToInt32(rat.Text); ;
             rat.Text = new PicViewModel().SwipeRate(e, rat.Text, i);
             String tmp = cat.Text;
             cat.Text = new PicViewModel().SwipeCat(e, tmp);

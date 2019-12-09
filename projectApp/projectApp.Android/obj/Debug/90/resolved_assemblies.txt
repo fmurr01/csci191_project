@@ -4,6 +4,8 @@ C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\p
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\PCLStorage.Abstractions.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\PCLStorage.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.Media.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Plugin.Permissions.dll
@@ -70,4 +72,8 @@ C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\p
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.IO.Compression.FileSystem.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.Web.Services.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.IO.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.Resources.ResourceManager.dll
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\System.Diagnostics.Debug.dll
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\assets\Mono.Security.dll

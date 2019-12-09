@@ -7,21 +7,13 @@
              mc:Ignorable="d"
              x:Class="projectApp.View.picView">
     <ContentPage.Content>
-        <StackLayout Margin="20,35,20,20">
+        <StackLayout Margin="20,5,20,20">
             <Label Text="{Binding Name}"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-            <Image Source="{Binding Directory}" >
-                <Image.GestureRecognizers>
-                    <!-- Can also set a swipe threshold on each gesture recognizer -->
-                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
-                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
-                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
-                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
-                </Image.GestureRecognizers>
-            </Image>
             <Grid Padding="5">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="20" />
                     <RowDefinition Height="20" />
                     <RowDefinition Height="20" />
@@ -34,29 +26,42 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Row="0"
-                       Grid.Column="0"
+                <Image Source="{Binding Directory}" 
+                           Grid.Row="0"
+                           Grid.ColumnSpan="4"                         
+                           >
+                    <Image.GestureRecognizers>
+                        <!-- Can also set a swipe threshold on each gesture recognizer -->
+                        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                        <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Grid.Row="4"
+                       Grid.Column="2"
                        Text="Category: "
                        LineBreakMode="TailTruncation"
-                       FontAttributes="Italic"
+                       FontAttributes="Bold"
                        VerticalOptions="End" />
-                <Label Grid.Row="0"
-                       Grid.Column="1"
+                <Label Grid.Row="4"
+                       Grid.Column="3"
                        Text="{Binding Category}"
-                       FontAttributes="Italic"
+                       FontAttributes="Bold"
                        VerticalOptions="End" 
                        x:Name="cat"/>
 
-                <Label Grid.Row="0"
-                       Grid.Column="2"
+                <Label Grid.Row="4"
+                       Grid.Column="0"
                        Text="Rating: "
                        LineBreakMode="TailTruncation"
-                       FontAttributes="Italic"
+                       FontAttributes="Bold"
                        VerticalOptions="End" />
-                <Label Grid.Row="0"                      
-                       Grid.Column="3"
+                <Label Grid.Row="4"                      
+                       Grid.Column="1"
                        Text="{Binding Rating}"
-                       FontAttributes="Italic"
+                       FontAttributes="Bold"
                        VerticalOptions="End" 
                        x:Name="rat"/>
 
@@ -84,13 +89,13 @@
                        VerticalOptions="End" />
                 <Label Grid.Row="3"
                        Grid.Column="1"
-                       Grid.ColumnSpan="2"
+                       Grid.ColumnSpan="3"
                        Text="{Binding Coordinates}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
-                
-                
+
+
                 <ImageButton x:Name="SavePicChanges" Source="save2.png" Clicked="PicView_Clicked"
                      Grid.Row="1"
                      Grid.Column="1"

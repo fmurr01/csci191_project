@@ -7,6 +7,9 @@ using System.Windows.Input;
 using projectApp.Model;
 using projectApp.Service;
 using Xamarin.Forms;
+using System.IO;
+using Newtonsoft.Json;
+
 
 namespace projectApp.ViewModel
 {
@@ -23,7 +26,14 @@ namespace projectApp.ViewModel
 
         public BrowseImagesViewModel()
         {
-            Images = new ImageService().GetImageList();
+
+            String fileName = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/jsonFile.txt";
+
+            string text = File.ReadAllText(fileName);
+            List<pic> pics = new List<pic>();
+            pics = JsonConvert.DeserializeObject<List<pic>>(text);
+            Images = pics;
+     
         }
 
         

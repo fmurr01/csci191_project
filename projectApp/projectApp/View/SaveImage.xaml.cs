@@ -16,7 +16,7 @@ namespace projectApp.View
             InitializeComponent();
             BindingContext = vm;
             imageIcon.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
-            imageName_label.Text = "IMG_" + (new Random()).Next().ToString();
+            imageName_label.Text = name;
             timestamp_label.Text = timestamp;
             location_label.Text = coordinates;
 
@@ -24,7 +24,8 @@ namespace projectApp.View
 
         private void ConfirmSave_button_Clicked(object sender, EventArgs e)
         {
-            //vm.SaveImageInfo()
+            SaveImageViewModel.SaveImage(imageName_label.Text, timestamp_label.Text, location_label.Text, category_label.Text);
+            this.Navigation.PopAsync();
         }
         // confirmsave button here
         // if back button then delete the picture photo.Delete(path)

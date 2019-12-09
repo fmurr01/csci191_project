@@ -11,7 +11,7 @@ namespace projectApp.Model
         public string Directory { get; set; }
         public string Coordinates { get; set; }
         public int Rating { get; set; }
-        public List<string> Category { get; set; }
+        public string Category { get; set; }
 
         public pic()
         {
@@ -20,7 +20,7 @@ namespace projectApp.Model
             Directory = "";
             Coordinates = "";
             Rating = 0;
-            Category = new List<string>();
+            Category = "None";
         }
 
     }
