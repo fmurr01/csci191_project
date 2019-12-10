@@ -51,7 +51,7 @@
                 <Button 
                     Clicked="rating_button_Clicked"
                     Grid.Row="0"
-                    Grid.Column="2"
+                    Grid.Column="3"
                     Text="Top 5" 
                     VerticalOptions="Start"
                     HorizontalOptions="FillAndExpand" 

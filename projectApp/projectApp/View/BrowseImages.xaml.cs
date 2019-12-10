@@ -31,17 +31,24 @@ namespace projectApp.View
         {
             //  BrowseImagesViewModel.;
              
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false, false);
         }
 
-        private void rating_button_Clicked(object sender, EventArgs e)
+        private void distance_button_Clicked(object sender, EventArgs e)
         {
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, true, false);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, true, false, false);
         }
 
         private void category_button_Clicked(object sender, EventArgs e)
         {
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, true);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, true, false);
+
+
+        }
+
+        private void rating_button_Clicked(object sender, EventArgs e)
+        {
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, false, true);
         }
     }
 }
