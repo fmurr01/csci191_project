@@ -18,7 +18,7 @@ namespace projectApp.ViewModel
         {
 
         }
-        public static void SaveImage(String Name, String TimeStamp, String Location, String Category, String Directory)
+        public static void SaveImage(String Name, String TimeStamp, String Location, String Category, String Directory, int Rating)
         {
             String dir = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/";
             pic savedPic = new pic();
@@ -27,6 +27,7 @@ namespace projectApp.ViewModel
             savedPic.Category = Category;
             savedPic.Coordinates = Location;
             savedPic.Directory = dir + "Pictures/cs191t/" + Directory;
+            savedPic.Rating = Rating;
             string fileName = dir + "jsonFile.txt";
             List<pic> pics = new List<pic>();
 

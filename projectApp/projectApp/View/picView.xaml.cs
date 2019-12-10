@@ -24,7 +24,7 @@ namespace projectApp.View
             ImageButton button = (ImageButton)sender;
             try
             {              
-                SaveImageViewModel.SaveImage(imageName_entry.Text, timestamp_label.Text, coordinates_label.Text, category_label.Text, imageName_entry.Text);
+                SaveImageViewModel.SaveImage(imageName_entry.Text, timestamp_label.Text, coordinates_label.Text, category_label.Text, imageName_entry.Text, Convert.ToInt32(rating_label.Text));
             }
             catch (Exception exc)
             {

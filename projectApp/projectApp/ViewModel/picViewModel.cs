@@ -6,7 +6,6 @@ using System.Text;
 using System.Windows.Input;
 using projectApp.Model;
 using projectApp.View;
-using projectApp.Service;
 using Xamarin.Forms;
 
 namespace projectApp.ViewModel
@@ -25,7 +24,7 @@ namespace projectApp.ViewModel
 
         }
 
-        public pic selectedPic(pic selectedItem)
+        public pic SelectedPic(pic selectedItem)
         { 
             return selectedItem;
         }

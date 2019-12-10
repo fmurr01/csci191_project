@@ -9,7 +9,60 @@
     <ContentPage.BindingContext>
         <vm:BrowseImagesViewModel/>
     </ContentPage.BindingContext>
-    <CollectionView ItemsSource="{Binding Images}"
+    <StackLayout>
+        <Grid Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button 
+                    Clicked="time_button_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Time" 
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" 
+                   
+                    />
+                <Button 
+                    Clicked="distance_button_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Distance" 
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" 
+                    
+                    />
+                <Button 
+                    Clicked="category_button_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Text="Category" 
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" 
+                   
+                    />
+                <Button 
+                    Clicked="rating_button_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Text="Top 5" 
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" 
+                   
+                    />
+            </Grid>
+        </Grid>
+
+        <CollectionView 
+            ItemsSource="{Binding Pictures}"
+                        x:Name="colView"
                     SelectionMode="Single"
                     SelectionChanged="OnCollectionViewSelectionChanged"
                     >
@@ -29,7 +82,7 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Image Grid.RowSpan="5"
@@ -39,10 +92,12 @@
                        WidthRequest="60" >
                     </Image>
                     <Label Grid.Column="1"
+                       Grid.ColumnSpan="3"
                        Text="{Binding Name}"
                        FontAttributes="Bold"
                        LineBreakMode="TailTruncation" />
                     <Label Grid.Row="1"
+                            Grid.ColumnSpan="3"
                        Grid.Column="2"
                        Text="{Binding Category}"
                        LineBreakMode="TailTruncation"
@@ -56,6 +111,7 @@
                        VerticalOptions="End" />
                     <Label Grid.Row="2"
                        Grid.Column="2"
+                            Grid.ColumnSpan="3"
                        Text="{Binding Rating}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
@@ -67,6 +123,7 @@
                        FontAttributes="Italic"
                        VerticalOptions="End" />
                     <Label Grid.Row="3"
+                            Grid.ColumnSpan="3"
                        Grid.Column="2"
                        Text="{Binding TimeStamp}"
                        LineBreakMode="TailTruncation"
@@ -80,6 +137,7 @@
                        VerticalOptions="End" />
                     <Label Grid.Row="4"
                        Grid.Column="2"
+                            Grid.ColumnSpan="3"
                        Text="{Binding Coordinates}"
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
@@ -95,5 +153,5 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-
+    </StackLayout>
 </ContentPage>

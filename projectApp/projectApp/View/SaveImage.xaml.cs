@@ -26,7 +26,7 @@ namespace projectApp.View
 
         private void ConfirmSave_button_Clicked(object sender, EventArgs e)
         {
-            SaveImageViewModel.SaveImage(imageName_label.Text, timestamp_label.Text, location_label.Text, category_label.Text, directory);
+            SaveImageViewModel.SaveImage(imageName_label.Text, timestamp_label.Text, location_label.Text, category_label.Text, directory, 0);
             this.Navigation.PopAsync();
         }
         // confirmsave button here

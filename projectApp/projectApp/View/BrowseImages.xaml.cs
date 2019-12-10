@@ -27,6 +27,21 @@ namespace projectApp.View
             picViewPage.BindingContext = item;
             Navigation.PushAsync(picViewPage);
         }
+        private void time_button_Clicked (object sender, EventArgs e)
+        {
+            //  BrowseImagesViewModel.;
+             
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false);
+        }
 
+        private void rating_button_Clicked(object sender, EventArgs e)
+        {
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, true, false);
+        }
+
+        private void category_button_Clicked(object sender, EventArgs e)
+        {
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, true);
+        }
     }
 }
