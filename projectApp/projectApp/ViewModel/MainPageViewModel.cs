@@ -33,10 +33,6 @@ namespace projectApp.ViewModel
             {
                 return new View.BrowseImages();
             }
-            else if (nextPageName == RatePage)
-            {
-                return new View.RateImages();
-            }
             else if(nextPageName == LocationPage)  // Might chaneg to MapPage
             {
                 return new View.MapImages();

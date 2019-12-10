@@ -552,15 +552,10 @@ C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\p
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\values\colors.xml
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
-C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-hdpi\icon.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-hdpi\launcher_foreground.png
-C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-mdpi\icon.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-mdpi\launcher_foreground.png
-C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xhdpi\icon.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xhdpi\launcher_foreground.png
-C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxhdpi\icon.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
-C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\drawable\browse1.png
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\drawable\browse2.png
@@ -1118,3 +1113,7 @@ C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\p
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\src\md513074be467e0034b6ca192c1689af813\GoogleApiClientConnectionCallbacksImpl.java
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\android\src\md513074be467e0034b6ca192c1689af813\GoogleApiClientOnConnectionFailedListenerImpl.java
 C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\drawable\bg1.jpg
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\ic_launcher.png
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-xxhdpi\ic_launcher.png
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-mdpi\ic_launcher.png
+C:\Users\test\Documents\GitHub\csci191_project\csci\csci191_project\projectApp\projectApp.Android\obj\Debug\90\res\mipmap-hdpi\ic_launcher.png

@@ -17,13 +17,13 @@
   <uses-feature android:name="android.hardware.location" android:required="false" />
   <uses-feature android:name="android.hardware.location.gps" android:required="false" />
   <uses-feature android:name="android.hardware.location.network" android:required="false" />
-  <application android:label="Picinator.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+  <application android:label="projectapp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:debuggable="true">
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDPttQ6on4sJlRcl6Rt8g4HXvpi5U3fo3s" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.projectapp.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="projectApp" android:theme="@style/MainTheme" android:name="md5652cceab0d342ac4bceb444e1e50385e.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/ic_launcher" android:label="Pepenator" android:theme="@style/MainTheme" android:name="md5652cceab0d342ac4bceb444e1e50385e.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
