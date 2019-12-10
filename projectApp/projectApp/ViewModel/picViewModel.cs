@@ -48,23 +48,38 @@ namespace projectApp.ViewModel
             return rat;
         }
 
-        public String SwipeCat(SwipedEventArgs e, String tmp)
+        public String SwipeCat(SwipedEventArgs e, String orig)
         {
+            string[] Categories = new string[5] { "Selfie", "Nature", "City", "Random", "Swag" };
+           
+            int i = 0;
+            
+            if (!orig.Equals("") || !orig.Equals("CATEGORY"))
+            {
+                i = Array.IndexOf(Categories, orig);
+            }
 
             if (e.Direction.ToString() == "Up")
             {
-               
-                tmp = "Category UP";
+                if (i < 4)
+                {
+                    i++;
+                }
+                String tmp = Categories[i];       
                 return tmp;
             }
-            if (e.Direction.ToString() == "Down")
+            else if (e.Direction.ToString() == "Down")
             {
-
-                tmp = "Category DOWN";
+                if (i > 0)
+                {
+                    i--;
+                }
+                String tmp = Categories[i];
+            
                 return tmp;
 
             }
-            return tmp;
+            return orig;
         }
     }
 }

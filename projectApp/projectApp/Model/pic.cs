@@ -23,7 +23,7 @@ namespace projectApp.Model
             Directory = "";
             Coordinates = "";
             Rating = 0;
-            Category = "None";
+            Category = "";
         }
 
     }

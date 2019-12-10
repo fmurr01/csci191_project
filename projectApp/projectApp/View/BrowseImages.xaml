@@ -79,13 +79,15 @@
                         <RowDefinition Height="20" />
                         <RowDefinition Height="20" />
                         <RowDefinition Height="20" />
-                    </Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+    
+                        </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Image Grid.RowSpan="5"
+                    <Image Grid.RowSpan="6"
                        Source="{Binding Directory}"
                        Aspect="AspectFill"
                        HeightRequest="60"
@@ -148,8 +150,21 @@
                        LineBreakMode="TailTruncation"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
+                        <Label Grid.Row="5"
+                       Grid.Column="2"
+                            Grid.ColumnSpan="3"
+                       Text="{Binding Distance}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                        <Label Grid.Row="5"
+                       Grid.Column="1"
+                       Text="Distance: "
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
 
-                </Grid>
+                    </Grid>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>

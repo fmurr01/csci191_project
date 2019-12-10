@@ -20,11 +20,18 @@
                 <ColumnDefinition Width="130"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Image x:Name="imageIcon" 
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
-                   Margin="0, 20, 0, 20"/> <!-- image preview spans 2 rows -->
+                   Margin="0, 20, 0, 20"
+                   >
+                <Image.GestureRecognizers>
+                <!-- Can also set a swipe threshold on each gesture recognizer -->
+                <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                </Image.GestureRecognizers>
+            </Image> <!-- image preview spans 2 rows -->
             
             <!-- IMAGE NAME -->
             <Label Text="Name: "
@@ -131,7 +138,7 @@
                    BorderColor="#5085A5"
                    BackgroundColor="#5085A5">
                 <Label x:Name="category_label"
-                       Text="CATEGORY" 
+                       Text="Swipe Category" 
                        TextColor="#F7F9fB"
                        HorizontalTextAlignment="Start"
                        HorizontalOptions="Start"
