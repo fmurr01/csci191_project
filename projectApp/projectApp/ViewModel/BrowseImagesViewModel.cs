@@ -84,7 +84,7 @@ namespace projectApp.ViewModel
             return Distance;
         }
 
-        public List<pic> Sorter(bool time, bool dist, bool cat, bool rat)
+        public List<pic> Sorter(bool time, bool dist, bool cat, bool rat, string selectedCat)
         {
             String fileName = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/jsonFile.txt";
             string text = File.ReadAllText(fileName);
@@ -110,6 +110,7 @@ namespace projectApp.ViewModel
             else if (cat)
             {
                 var orderByCat = from p in pics
+                                  where p.Category == selectedCat
                                   orderby p.Category ascending
                                   select p;
                 Pictures = orderByCat.ToList();
@@ -128,7 +129,28 @@ namespace projectApp.ViewModel
                     }
         }
 
+        public String PressCat(EventArgs e, String orig)
+        {
+            string[] Categories = new string[5] { "Selfie", "Nature", "City", "Random", "Swag" };
 
-        
+            int i = 0;
+
+            if (!orig.Equals("") || !orig.Equals("CATEGORY"))
+            {
+                i = Array.IndexOf(Categories, orig);
+            }
+            if (i == 4)
+            {
+                i = 0;
+            }
+            else
+            {
+                i++;
+            }
+            String tmp = Categories[i];
+            return tmp;
+
+        }
+
     }
 }

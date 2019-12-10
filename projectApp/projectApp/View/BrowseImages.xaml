@@ -41,13 +41,13 @@
                     />
                 <Button 
                     Clicked="category_button_Clicked"
+                    x:Name="category_Button"
                     Grid.Row="0"
                     Grid.Column="2"
-                    Text="Category" 
+                    Text="Selfie" 
                     VerticalOptions="Start"
-                    HorizontalOptions="FillAndExpand" 
-                   
-                    />
+                    HorizontalOptions="FillAndExpand" >
+                </Button>
                 <Button 
                     Clicked="rating_button_Clicked"
                     Grid.Row="0"

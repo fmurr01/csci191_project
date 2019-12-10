@@ -27,28 +27,35 @@ namespace projectApp.View
             picViewPage.BindingContext = item;
             Navigation.PushAsync(picViewPage);
         }
+
+        void OnSwiped(object sender, SwipedEventArgs e)
+        {
+            Console.WriteLine("------------------------SWIPe");
+            string tmp = category_Button.Text;
+            category_Button.Text = new PicViewModel().SwipeCat(e, tmp);
+
+        }
         private void time_button_Clicked (object sender, EventArgs e)
         {
             //  BrowseImagesViewModel.;
              
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false, false);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false, false, "");
         }
 
         private void distance_button_Clicked(object sender, EventArgs e)
         {
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, true, false, false);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, true, false, false, "");
         }
 
         private void category_button_Clicked(object sender, EventArgs e)
         {
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, true, false);
-
-
+            category_Button.Text = new BrowseImagesViewModel().PressCat(e, category_Button.Text);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, true, false, category_Button.Text);
         }
 
         private void rating_button_Clicked(object sender, EventArgs e)
         {
-            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, false, true);
+            colView.ItemsSource = new BrowseImagesViewModel().Sorter(false, false, false, true, "");
         }
     }
 }
