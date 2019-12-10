@@ -38,10 +38,9 @@ namespace projectApp.ViewModel
             pics = JsonConvert.DeserializeObject<List<pic>>(text);
             GetLocation(pics);
             Pictures = pics;
-            //     Pictures;
-            //     Images = pics;
         }
 
+        // gets current location and writes it into the json file
         public async void GetLocation(List<pic> pics)
         {
             try
@@ -73,7 +72,7 @@ namespace projectApp.ViewModel
                 // Unable to get location
             }
         }
-
+        // computes distance between a pic element and a location
         public Double GetDistance(pic p, Location location)
         {
             string[] tmp = p.Coordinates.Split(';');
@@ -83,7 +82,7 @@ namespace projectApp.ViewModel
             Double Distance = Location.CalculateDistance(picLocation, location, DistanceUnits.Kilometers);
             return Distance;
         }
-
+        // Sorts and returns list of pics using Linq. How it sorts depends on which bool is set to true
         public List<pic> Sorter(bool time, bool dist, bool cat, bool rat, string selectedCat)
         {
             String fileName = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/jsonFile.txt";
@@ -128,7 +127,7 @@ namespace projectApp.ViewModel
                 return pics;
                     }
         }
-
+        //returns next category string and jumps to the start if at the end of the Categories array
         public String PressCat(EventArgs e, String orig)
         {
             string[] Categories = new string[5] { "Selfie", "Nature", "City", "Random", "Swag" };

@@ -18,22 +18,13 @@ namespace projectApp.View
 
             CaptureImage_Clicked();             // opens the camera on initialization
             Console.WriteLine("NEWIMAGE SOURCE {0}", saveButton.IsVisible);
-            //newImage.Source = "browse1.png";
-            //img = vm.ImageInfo; dont need this
-            
-            //saveButton.IsVisible = false;       // button is clicked, hide buttons
-            //discardButton.IsVisible = false;
         }
         public void SaveButton_Clicked(object sender, System.EventArgs e)
         {
-            // call function with img as parameter
-            //Navigation.PushAsync(new View.SaveImage(photo, timeStamp, imageLocation));
-            
             Navigation.PushAsync(vm.SaveImage_NextPage());
         }
         public void CaptureImage_Clicked()
         {
-            //PhotoImage.Source = vm.GetImage();
             vm.DisplayImage();
         }
     }

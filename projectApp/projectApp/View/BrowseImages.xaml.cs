@@ -27,17 +27,9 @@ namespace projectApp.View
             picViewPage.BindingContext = item;
             Navigation.PushAsync(picViewPage);
         }
-
-        void OnSwiped(object sender, SwipedEventArgs e)
-        {
-            Console.WriteLine("------------------------SWIPe");
-            string tmp = category_Button.Text;
-            category_Button.Text = new PicViewModel().SwipeCat(e, tmp);
-
-        }
+        // Sort functionalities for every button. Refer to BrowseImagesViewModel().Sorter(...) for more information
         private void time_button_Clicked (object sender, EventArgs e)
         {
-            //  BrowseImagesViewModel.;
              
             colView.ItemsSource = new BrowseImagesViewModel().Sorter(true,false,false, false, "");
         }

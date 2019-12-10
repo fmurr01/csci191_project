@@ -16,7 +16,6 @@ namespace projectApp.ViewModel
 
         public MainPageViewModel()  // Image type from model 
         {
-            //captureImage = $"{image.Name}";
             CameraPage = "CameraButtonId";
             BrowsePage = "BrowseButtonId";
             RatePage = "RateButtonId";
@@ -25,7 +24,7 @@ namespace projectApp.ViewModel
 
         public Page MainPage_NextPage(string nextPageName)  
         {
-            if (nextPageName == CameraPage)    // probably need a try catch here for when/if its null
+            if (nextPageName == CameraPage)    
             {
                 return new View.CaptureImage();
             }
@@ -33,7 +32,7 @@ namespace projectApp.ViewModel
             {
                 return new View.BrowseImages();
             }
-            else if(nextPageName == LocationPage)  // Might chaneg to MapPage
+            else if(nextPageName == LocationPage)  
             {
                 return new View.MapImages();
             }

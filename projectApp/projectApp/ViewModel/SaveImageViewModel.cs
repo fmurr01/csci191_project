@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using projectApp.Model;
 using Newtonsoft.Json;
-using PCLStorage;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.IO;
@@ -18,6 +17,7 @@ namespace projectApp.ViewModel
         {
 
         }
+        //Saves image to jsonFile. Does overwrite if a pic with the same TimeStamp is already in there
         public static void SaveImage(String Name, String TimeStamp, String Location, String Category, String Directory, int Rating)
         {
             String dir = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/";

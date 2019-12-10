@@ -46,7 +46,7 @@ namespace projectApp.ViewModel
             DeserializeImageJson();
         }
 
-        public List<pic> CreateMapList()   // Could use linq here -__-
+        public List<pic> CreateMapList()   //filters mapList for pic category
         {
             List<Model.pic> tmp = new List<Model.pic>(mapList);
             var tempList = from p in mapList
@@ -56,26 +56,10 @@ namespace projectApp.ViewModel
             return tmp;
 
         }
-        /*
-        public void SerializeImageObject()
-        {
-            string documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var jsonpath = Path.Combine(documents, "AppImages.json");
 
-            string jsonData = JsonConvert.SerializeObject(mapList, Formatting.Indented);
-
-            File.WriteAllText(jsonpath, jsonData);
-
-            Console.WriteLine("UPDATEDJSON: {0}", jsonData);
-        }
-        */
         public void DeserializeImageJson()
         {
             var jsonpath = "/storage/emulated/0/Android/data/com.companyname.projectapp/files/jsonFile.txt";
-            if (!File.Exists(jsonpath))
-            {
-           //     using (File.Create(jsonpath)) ;
-            }
             Console.WriteLine("JSONPATH: {0}", jsonpath);
             string jsonData = File.ReadAllText(jsonpath);
 
@@ -87,7 +71,7 @@ namespace projectApp.ViewModel
         }
         public List<Model.pic> GetImagesToPin()
         {
-            
+            //Executes and returns CreateMapList();
             Console.WriteLine("MAPLIST: {0}", mapList.Count);
             return CreateMapList(); 
         }

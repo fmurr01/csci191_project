@@ -67,12 +67,6 @@ namespace projectApp.ViewModel
         {
             await CrossMedia.Current.Initialize();
 
-            //String storageDir = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyPictures);
-            //Console.WriteLine(storageDir);
-
-            //string timeStamp;
-            //timeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-
             ImageInfo.TimeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
 
             Plugin.Media.Abstractions.Location imageLocation;
@@ -129,19 +123,6 @@ namespace projectApp.ViewModel
 
 
             }
-
-
-            /*
-            if (!CrossMedia.Current.IsCameraAvailable || CrossMedia.Current.IsTakePhotoSupported)
-            {
-                await DisplayAlert("No Camera", "No camera available.", "OK");
-                return;
-            }
-            */
-            /*if (file == null)
-                return;
-            await DisplayAlert("File Location", file.Path, "OK");
-            */
         }
 
     }

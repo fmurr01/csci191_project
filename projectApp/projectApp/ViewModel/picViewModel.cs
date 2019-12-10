@@ -28,7 +28,7 @@ namespace projectApp.ViewModel
         { 
             return selectedItem;
         }
-
+        //Changes the value of Rating onSwipe
         public String SwipeRate(SwipedEventArgs e, String rat, int i)
         {
             
@@ -47,7 +47,7 @@ namespace projectApp.ViewModel
             }
             return rat;
         }
-
+        //Rotates through the Categories array onSwipe. Gets current Position in Array and returns next or jumps to first
         public String SwipeCat(SwipedEventArgs e, String orig)
         {
             string[] Categories = new string[5] { "Selfie", "Nature", "City", "Random", "Swag" };

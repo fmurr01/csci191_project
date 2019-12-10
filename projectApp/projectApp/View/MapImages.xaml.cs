@@ -25,24 +25,18 @@ namespace projectApp.View
             map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(36.7783, -119.4179), Distance.FromMiles(100)));
 
         }
+        //adds pin for every given map list element
         public void AddPinsToMap()
         {
             List<Model.pic> PinList = vm.GetImagesToPin();
             Pin pin;
             double ImageLatitude;
             double ImageLongitude;
-            bool tempFlag = false; // change location for testing
             foreach (Model.pic img in PinList)
             {
                 ImageLatitude = Convert.ToDouble(img.Coordinates.Split(';')[0]);
                 ImageLongitude = Convert.ToDouble(img.Coordinates.Split(';')[1]);
 
-                if (tempFlag)
-                {
-                    ImageLatitude = 36.2077;
-                    ImageLongitude = -119.3473;
-                    tempFlag = false;
-                }
                 pin = new Pin
                 {
                     Label = img.Name,

@@ -38,7 +38,6 @@ namespace projectApp.View
             rating_label.Text = new PicViewModel().SwipeRate(e, rating_label.Text, i);
             String tmp = category_label.Text;
             category_label.Text = new PicViewModel().SwipeCat(e, tmp);
-            // rat.Text = $"{e.Direction.ToString()}";
         }
     }
 }
