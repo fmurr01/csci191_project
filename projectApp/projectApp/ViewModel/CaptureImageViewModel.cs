@@ -87,7 +87,7 @@ namespace projectApp.ViewModel
                 {
                     imageLocation.Latitude = location.Latitude;
                     imageLocation.Longitude = location.Longitude;
-                    ImageInfo.Coordinates = "(" + imageLocation.Latitude + ", " + imageLocation.Longitude + ")";
+                    ImageInfo.Coordinates = imageLocation.Latitude + ";" + imageLocation.Longitude;
                 }
             }
             catch (FeatureNotSupportedException fnsEx)

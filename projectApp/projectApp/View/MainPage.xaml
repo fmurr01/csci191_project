@@ -5,9 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="projectApp.MainPage"
-             Title="ProjectApp">
+             Title="Picinator"
+             BackgroundImage="bg1.jpg">
 
-    <Grid VerticalOptions="FillAndExpand" BackgroundColor="#265077">
+    <Grid VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -26,15 +27,6 @@
                      HorizontalOptions="CenterAndExpand"
                      VerticalOptions="FillAndExpand"
                      CornerRadius="40"/>
-        <ImageButton ClassId="{Binding RatePage}" x:Name="RateButton" Source="rate.png" Clicked="MainPage_Clicked"
-                     Grid.Column="0"
-                     Grid.Row="1"
-                     Padding="35"
-                     Margin="10,15,10,50"
-                     BackgroundColor="#F78888"
-                     HorizontalOptions="CenterAndExpand"
-                     VerticalOptions="FillAndExpand"
-                     CornerRadius="40"/>
         <ImageButton ClassId="{Binding BrowsePage}" x:Name="BrowseButton" Source="browse2.png" Clicked="MainPage_Clicked"
                      Grid.Column="1"
                      Grid.Row="0"
@@ -45,8 +37,9 @@
                      VerticalOptions="FillAndExpand"
                      CornerRadius="40"/>
         <ImageButton ClassId="{Binding LocationPage}" x:Name="LocationButton" Source="location2.png" Clicked="MainPage_Clicked"
-                     Grid.Column="1"
+                     Grid.Column="0"
                      Grid.Row="1"
+                     Grid.ColumnSpan="2"
                      Padding="35"
                      Margin="10,15,10,50"
                      BackgroundColor="#8EE4AF"

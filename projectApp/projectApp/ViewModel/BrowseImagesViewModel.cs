@@ -76,9 +76,9 @@ namespace projectApp.ViewModel
 
         public Double GetDistance(pic p, Location location)
         {
-            string[] tmp = p.Coordinates.Split(',');
-            Double picLatitude = Convert.ToDouble(tmp[0].Substring(1) + "," + tmp[1]);
-            Double picLongitude = Convert.ToDouble(tmp[2] + "," + tmp[3].Substring(0, tmp[3].Length - 1));
+            string[] tmp = p.Coordinates.Split(';');
+            Double picLatitude = Convert.ToDouble(tmp[0]);
+            Double picLongitude = Convert.ToDouble(tmp[1]);
             Location picLocation = new Location(picLatitude, picLongitude);
             Double Distance = Location.CalculateDistance(picLocation, location, DistanceUnits.Kilometers);
             return Distance;

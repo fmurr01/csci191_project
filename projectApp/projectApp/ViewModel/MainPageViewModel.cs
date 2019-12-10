@@ -39,7 +39,7 @@ namespace projectApp.ViewModel
             }
             else if(nextPageName == LocationPage)  // Might chaneg to MapPage
             {
-                //return new View.MapImage();
+                return new View.MapImages();
             }
             return null;
         }

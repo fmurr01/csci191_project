@@ -137,6 +137,18 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.Maps/4.1.0.555618": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.1.0.555618"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        }
       }
     }
   },
@@ -916,6 +928,39 @@
         "xamarin.forms.4.1.0.555618.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Maps/4.1.0.555618": {
+      "sha512": "tRWieW4CxNe881I8n6iEt0ISP4AiIrmh9jP5Zpovy3+QgFepLV/aOKOQJ/nvX/N0zjggviO72zyIiGpBkTAYGQ==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.1.0.555618",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.1.0.555618.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -925,7 +970,8 @@
       "PCLStorage >= 1.0.2",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Essentials >= 1.1.0",
-      "Xamarin.Forms >= 4.1.0.555618"
+      "Xamarin.Forms >= 4.1.0.555618",
+      "Xamarin.Forms.Maps >= 4.1.0.555618"
     ]
   },
   "packageFolders": {
@@ -993,6 +1039,10 @@
             "version": "[1.1.0, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[4.1.0.555618, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[4.1.0.555618, )"
           }
