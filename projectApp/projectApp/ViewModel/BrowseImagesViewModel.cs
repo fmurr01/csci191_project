@@ -118,7 +118,7 @@ namespace projectApp.ViewModel
             else if (rat)
             {
                 var orderByDistance = from p in pics
-                                      orderby p.Rating ascending
+                                      orderby p.Rating descending
                                       select p;
                 Pictures = orderByDistance.Take(5).ToList();
                 return Pictures;
